@@ -1,0 +1,257 @@
+@import "nullstyle.scss";
+
+.header {
+  margin: 40px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.header_logo {
+  margin-left: 250px;
+}
+
+.header_nav {
+  margin-right: 200px;
+}
+.buttons {
+  display: flex;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #9e9b9b;
+  text-align: center;
+  :hover {
+    color: #fb9c06;
+  }
+}
+.but_home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  margin: 20px;
+}
+
+.but_about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  margin: 20px;
+}
+
+.but_work {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  margin: 20px;
+}
+
+.but_blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  margin: 20px;
+}
+
+.but_contact {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-end;
+  padding: 10px;
+  margin: 20px;
+  width: 100%;
+}
+
+.banner {
+  background: url("/img/big_orange_bg_26.png");
+  width: 100%;
+  height: 400px;
+  border-top: 6px solid #fb9c06;
+  border-bottom: 6px solid #fb9c06;
+}
+
+.ban_content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.first_text {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 382px;
+  height: 67px;
+  opacity: 0.69;
+  background-color: #000000;
+  font-family: "Bebas Neue", cursive;
+  font-size: 37px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #fb9c06;
+  margin-bottom: 30px;
+  margin-left: 260px;
+}
+.second_text {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 397px;
+  height: 77px;
+  opacity: 0.7;
+  background-color: #ffaf12;
+  font-family: "Bebas Neue", cursive;
+  font-size: 37px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #6e6d6b;
+  margin-left: 250px;
+}
+
+.columns {
+  display: flex;
+  margin: 35px 250px 0px 250px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  line-height: 23px;
+}
+.columns_column {
+  margin-right: 30px;
+  span {
+    display: block;
+    text-align: right;
+    font-style: italic;
+    font-weight: 400;
+    color: #ffac00;
+  }
+}
+
+.team {
+}
+
+.team_title {
+  margin: 20px 0px 0px 0px;
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-size: 40px;
+  line-height: 23px;
+  font-weight: 100;
+  text-decoration: underline;
+  color: #ff9c00;
+}
+.units {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 250px 20px 250px;
+}
+.unit_one {
+  display: flex;
+  flex-direction: column;
+  padding-right: 170px;
+  align-items: center;
+}
+
+.unit_two {
+  display: flex;
+  flex-direction: column;
+  padding-right: 170px;
+  align-items: center;
+}
+.unit_three {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.unit_name {
+  span {
+    color: #fb9c06;
+  }
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 22px;
+  line-height: 23px;
+  font-weight: 300;
+  padding: 20px 0px 0px 20px;
+}
+.unit_ava {
+  margin: 20px 0px 20px 0px;
+}
+.unit_text {
+  font-family: Calibri;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 700;
+
+  color: #333333;
+}
+
+.mesage {
+}
+
+.legend {
+  text-align: center;
+  font-family: StMarie;
+  font-size: 40px;
+  font-weight: 100;
+  text-decoration: underline;
+  color: #ff9c00;
+  margin-bottom: 60px;
+}
+
+.label {
+  font-family: StMarie;
+  font-size: 24px;
+  font-weight: 100;
+  color: #fb9c06;
+  margin: 20px 30px 20px 250px;
+}
+.input {
+  width: 1070px;
+  height: 34px;
+  opacity: 0.92;
+  background-color: #f7f6f5;
+  margin-bottom: 20px;
+}
+
+.textarea {
+  width: 1070px;
+  height: 34px;
+  opacity: 0.92;
+  background-color: #f7f6f5;
+}
+
+.submit {
+  float: right;
+  width: 176px;
+  height: 46px;
+  background-color: #fb9c06;
+  font-family: StMarie;
+  font-size: 30px;
+  line-height: 23px;
+  font-weight: 100;
+  color: #ffffff;
+  border-bottom: 4px solid #cc830f;
+  margin: 20px 120px 30px 0px;
+}
+
+.footer {
+  width: 1634px;
+  height: 71px;
+  background-color: #fb9c06;
+  margin: 100px 0px 0px 0px;
+}
+
+.foot_text {
+  text-align: center;
+  font-family: StMarie;
+  font-size: 33px;
+  line-height: 23px;
+  font-weight: 100;
+  color: #ffffff;
+  padding: 25px 0px;
+}
