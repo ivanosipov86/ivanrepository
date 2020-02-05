@@ -1,0 +1,34 @@
+.first,
+.second,
+.third,
+.four{
+    display: inline-block;
+    height: 100px;
+    width: 200px;
+}
+.first{
+    position: relative;
+    background-color: blue;
+    z-index: 1;
+}
+
+.second{
+    position: relative;
+    background-color: red;
+    z-index: 2;
+    right: 20px;
+}
+
+.third{
+    background-color: green;
+    position: relative;
+    z-index: 3;
+    right: 40px;
+}
+
+.four{
+    position: relative;
+    background-color: yellow;
+    z-index: 4;
+    right: 80px;
+}

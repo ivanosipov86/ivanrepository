@@ -1,0 +1,66 @@
+.fixed {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  background-color: red;
+  height: 100px;
+  width: 100%; }
+
+.first,
+.second,
+.third,
+.four {
+  display: inline-block;
+  height: 100px;
+  width: 200px; }
+
+.first {
+  position: relative;
+  background-color: blue;
+  z-index: 1; }
+
+.second {
+  position: relative;
+  background-color: red;
+  z-index: 2;
+  right: 20px; }
+
+.third {
+  background-color: green;
+  position: relative;
+  z-index: 3;
+  right: 40px; }
+
+.four {
+  position: relative;
+  background-color: yellow;
+  z-index: 4;
+  right: 80px; }
+
+.container {
+  position: relative;
+  background-color: green;
+  width: 150px;
+  height: 150px;
+  left: 30px;
+  top: 40px;
+  border: 2px solid red;
+  border-radius: 10px; }
+
+.unread {
+  position: absolute;
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  left: 130px;
+  top: -25px;
+  border: 2px solid red;
+  border-radius: 20px; }
+
+.big-div {
+  height: 200vh;
+  margin-top: 105px;
+  background-color: lightgray;
+  border: 1px red solid; }
+
+/*# sourceMappingURL=maps/main.css.map */
