@@ -1,2 +1,27 @@
 
 
+.cat_inbox{
+    border: 3px red solid;
+    height: 70px;
+    width: 70px;
+
+}
+
+.cat_background{
+    background: url(../img/_104368428_gettyimages-543560762.jpg) 0 0 no-repeat;
+    height: 100px;
+    
+}
+
+.bg-one {
+    width: 640px; height: 616px;
+    background: url(../img/css_sprites.png) -10px -10px;
+}
+.bg-three {
+    width: 320px; height: 240px;
+    background: url(../img/css_sprites.png) -10px -646px;
+}
+.bg-two {
+    width: 304px; height: 320px;
+    background: url(../img/css_sprites.png) -670px -10px;
+}
