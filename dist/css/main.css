@@ -9,6 +9,7 @@
 .nav {
   font-family: 'PT Sans', sans-serif;
   width: 620px;
+  margin: 0 0 10px 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -30,7 +31,7 @@
 .circle-news {
   display: flex;
   flex-direction: row;
-  width: 620px; }
+  max-width: 620px; }
 
 .circle-news__img {
   width: 380px; }
@@ -59,12 +60,12 @@
     letter-spacing: -0.01em;
     color: #333333; }
   .circle-news__text .circle-news__text_arrows {
+    font-family: 'PT Sans', sans-serif;
     position: relative;
     top: 20px;
     left: 145px;
     display: flex;
-    align-items: center;
-    img: nth-child(odd); }
+    align-items: center; }
     .circle-news__text .circle-news__text_arrows img {
       padding: 4px; }
 
