@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
 .container {
   max-width: 1600px;
   position: relative; }
@@ -32,9 +33,6 @@
     text-transform: uppercase;
     letter-spacing: 0.2em;
     color: #ffffff; }
-
-.header__head_spacer {
-  width: 100px; }
 
 .header__head_nav {
   font-family: "Lato", sans-serif;
@@ -82,7 +80,8 @@
 .book__container {
   max-width: 1200px;
   display: flex;
-  padding-top: 15%; }
+  padding-top: 15%;
+  margin-bottom: 50px; }
 
 .book__description {
   max-width: 560px; }
@@ -96,22 +95,211 @@
     line-height: 1.2;
     font-weight: 900;
     text-transform: uppercase;
-    color: #000000; }
+    color: #000000;
+    padding: 0 0 20px 0; }
   .book__description_text .p2 {
     font-size: 50px;
     line-height: 1.2;
     font-weight: 900;
     text-transform: uppercase;
-    color: #101010; }
+    color: #101010;
+    padding: 0 0 30px 0; }
   .book__description_text .p3 {
     font-size: 18px;
     line-height: 1.2;
     font-weight: 400;
     color: #101010; }
 
+.book__description_button {
+  padding: 30px 0 0 0; }
+  .book__description_button a {
+    font-family: "Bebas Neue", cursive;
+    font-size: 29.6px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px; }
+
 .book__input {
   width: 430px;
   height: 480px;
   background-color: #fff; }
+
+.book__input_header {
+  background-color: #000;
+  display: flex;
+  font-family: "Lato", sans-serif;
+  font-size: 34.5px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 20px 30px; }
+  .book__input_header p {
+    color: #ffc61a;
+    padding-left: 7px; }
+
+.book__input_field {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px; }
+
+.book__input_field_left {
+  max-width: 50%;
+  overflow: hidden; }
+  .book__input_field_left input {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #4b4b4b;
+    outline: none;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border: 0;
+    border-bottom: 3px solid #e4e4e4; }
+
+.book__input_field_right {
+  max-width: 50%;
+  overflow: hidden; }
+  .book__input_field_right input {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #4b4b4b;
+    outline: none;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border: 0;
+    border-bottom: 3px solid #e4e4e4; }
+
+.book__input_choose_menu {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #4b4b4b;
+  outline: none;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  border: 0;
+  border-bottom: 3px solid #e4e4e4; }
+  .book__input_choose_menu select {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #4b4b4b;
+    border: 0;
+    outline: none; }
+    .book__input_choose_menu select option {
+      font-family: "Lato", sans-serif;
+      font-size: 20px;
+      line-height: 1.2;
+      font-weight: 500;
+      color: #4b4b4b; }
+
+.book__input_submit {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .book__input_submit input {
+    font-family: "Bebas Neue", cursive;
+    font-size: 29.6px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    min-width: 90%;
+    outline: none;
+    cursor: pointer; }
+
+.tariffs {
+  width: 100%;
+  background-color: #fff; }
+
+.tariffs__header {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 35px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffc61a; }
+  .tariffs__header p {
+    font-family: "Lato", sans-serif;
+    font-size: 44px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #000000; }
+
+.tariffs__container {
+  max-width: 1200px;
+  display: flex;
+  padding-top: 5%; }
+
+.tariffs__columns {
+  min-width: 100%;
+  display: flex; }
+
+.tariffs__columns_column1 {
+  max-width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f5f4f2;
+  position: relative;
+  padding-top: 120px; }
+  .tariffs__columns_column1 img {
+    position: absolute;
+    bottom: 70%; }
+  .tariffs__columns_column1 .title {
+    font-family: "Lato", sans-serif;
+    font-size: 30.5px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #000000; }
+  .tariffs__columns_column1 .text {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #101010; }
+  .tariffs__columns_column1 .prise {
+    font-family: "Lato", sans-serif;
+    font-size: 44px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffc61a; }
+  .tariffs__columns_column1 .button {
+    margin-top: 30px; }
+    .tariffs__columns_column1 .button a {
+      font-family: "Bebas Neue", cursive;
+      font-size: 29.6px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #ffffff;
+      background-color: #ffc61a;
+      text-decoration: none;
+      padding: 10px 30px;
+      border-radius: 10px;
+      color: #000; }
 
 /*# sourceMappingURL=maps/main.css.map */

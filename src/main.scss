@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
 
 .container {
   max-width: 1600px;
@@ -39,8 +40,7 @@
     color: #ffffff;
   }
 }
-.header__head_spacer{
-width: ;
+.header__head_spacer {
 }
 .header__head_nav {
   font-family: "Lato", sans-serif;
@@ -49,9 +49,9 @@ width: ;
   font-weight: 900;
   text-transform: uppercase;
   color: #ffffff;
-  ul{
+  ul {
     display: flex;
-    li{
+    li {
       padding: 10px;
       white-space: nowrap;
     }
@@ -64,26 +64,22 @@ width: ;
   align-items: center;
   max-width: 50%;
   position: absolute;
-  top:250px;
+  top: 250px;
   left: 25%;
-  
-  
 }
 .header__center_number {
-white-space: nowrap;
-text-align: center;
-font-family: "Lato", sans-serif;
-font-size: 300%;
-line-height: 1.2;
-font-weight: 900;
-text-transform: uppercase;
-color: #ffffff;
-
+  white-space: nowrap;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 300%;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .header__center_img {
   padding-top: 50px;
-  
 }
 .book {
   display: flex;
@@ -91,50 +87,253 @@ color: #ffffff;
   align-items: center;
   background-color: #ffc61a;
   max-width: 100%;
-  
 }
-.book__container{
-  max-width:1200px;
+.book__container {
+  max-width: 1200px;
   display: flex;
   padding-top: 15%;
-  
+  margin-bottom: 50px;
 }
 .book__description {
   max-width: 560px;
-  
-  
 }
 .book__description_text {
   display: flex;
   flex-direction: column;
   font-family: "Lato", sans-serif;
-  
-  .p1{
-font-size: 35px;
-line-height: 1.2;
-font-weight: 900;
-text-transform: uppercase;
-color: #000000;
-  }
-  .p2{
-font-size: 50px;
-line-height: 1.2;
-font-weight: 900;
-text-transform: uppercase;
-color: #101010;
-  }
-  .p3{
-font-size: 18px;
-line-height: 1.2;
-font-weight: 400;
-color: #101010;
-  }
 
+  .p1 {
+    font-size: 35px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 0 0 20px 0;
+  }
+  .p2 {
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #101010;
+    padding: 0 0 30px 0;
+  }
+  .p3 {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #101010;
+  }
 }
 .book__description_button {
+  padding: 30px 0 0 0;
+
+  a {
+    font-family: "Bebas Neue", cursive;
+    font-size: 29.6px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+  }
 }
 .book__input {
   width: 430px;
   height: 480px;
   background-color: #fff;
+}
+.book__input_header {
+  background-color: #000;
+  display: flex;
+  font-family: "Lato", sans-serif;
+  font-size: 34.5px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 20px 30px;
+  p {
+    color: #ffc61a;
+    padding-left: 7px;
+  }
+}
+.book__input_field {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px;
+}
+.book__input_field_left {
+  max-width: 50%;
+  overflow: hidden;
+  input {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #4b4b4b;
+    outline: none;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border: 0;
+    border-bottom: 3px solid #e4e4e4;
+  }
+}
+.book__input_field_right {
+  max-width: 50%;
+  overflow: hidden;
+  input {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #4b4b4b;
+    outline: none;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border: 0;
+    border-bottom: 3px solid #e4e4e4;
+  }
+}
+.book__input_choose_menu {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #4b4b4b;
+  outline: none;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  border: 0;
+  border-bottom: 3px solid #e4e4e4;
+  select {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #4b4b4b;
+    border: 0;
+    outline: none;
+    option {
+      font-family: "Lato", sans-serif;
+      font-size: 20px;
+      line-height: 1.2;
+      font-weight: 500;
+      color: #4b4b4b;
+    }
+  }
+}
+.book__input_submit {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  input {
+    font-family: "Bebas Neue", cursive;
+    font-size: 29.6px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    min-width: 90%;
+    outline: none;
+    cursor: pointer;
+  }
+}
+.tariffs {
+  width: 100%;
+  background-color: #fff;
+}
+.tariffs__header {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 35px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffc61a;
+  p {
+    font-family: "Lato", sans-serif;
+    font-size: 44px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #000000;
+  }
+}
+.tariffs__container {
+  max-width: 1200px;
+  display: flex;
+  padding-top: 5%;
+}
+.tariffs__columns {
+  min-width: 100%;
+  display: flex;
+}
+.tariffs__columns_column1 {
+  max-width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f5f4f2;
+  position: relative;
+  padding-top: 120px;
+  img{
+    position: absolute;
+    bottom: 70%;
+  }
+  .title {
+    font-family: "Lato", sans-serif;
+    font-size: 30.5px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .text {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #101010;
+  }
+  .prise{
+    font-family: "Lato", sans-serif;
+   font-size: 44px;
+   line-height: 1.2;
+   font-weight: 900;
+   text-transform: uppercase;
+   color: #ffc61a;
+     }
+  .button{
+    margin-top: 30px;
+    a{
+      font-family: "Bebas Neue", cursive;
+    font-size: 29.6px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #ffc61a;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color:#000 ;
+    
+    }
+  }
+}
+.tariffs__columns_column2 {
+}
+.tariffs__columns_column3 {
 }
