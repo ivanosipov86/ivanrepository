@@ -1,4 +1,29 @@
-html * {
-  outline: 1px solid red; }
+.container {
+  position: relative; }
+
+.container_item {
+  margin: 400px auto;
+  width: 50%;
+  height: 50%;
+  text-align: center; }
+
+.modal__open {
+  display: none;
+  background-color: #581758;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border: 3px solid #581758;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+#open {
+  top: 0; }
+
+#open:checked ~ .modal__open {
+  display: flex; }
 
 /*# sourceMappingURL=maps/main.css.map */
