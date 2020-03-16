@@ -255,7 +255,7 @@
   margin: 8%; }
 
 .tariffs__columns {
-  man-width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: space-around; }
 
@@ -341,8 +341,114 @@
     text-transform: uppercase;
     color: #ffffff; }
 
-.wish__description {
+.wish__items {
+  position: absolute;
   max-width: 1200px;
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  top: 40%;
+  margin-left: 8%; }
+
+.wish__item {
+  display: flex;
+  max-width: 45%;
+  margin-bottom: 5%; }
+
+.wish__item_icon {
+  position: relative;
+  background-color: #ffc61a;
+  min-width: 81px;
+  height: 81px;
+  border-radius: 50%; }
+  .wish__item_icon img {
+    position: absolute;
+    top: 33.333%;
+    left: 33.333%; }
+
+.wish__item_text {
+  padding-left: 5%;
+  font-family: "Lato", sans-serif; }
+  .wish__item_text h2 {
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffc61a; }
+  .wish__item_text p {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff; }
+
+.wish__button .button {
+  position: absolute;
+  top: 90%;
+  left: 45%; }
+  .wish__button .button a {
+    font-family: "Bebas Neue", cursive;
+    font-size: 29.6px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #ffc61a;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: #000; }
+
+.download {
+  position: relative;
+  display: flex;
+  justify-content: center; }
+
+.download__header {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 35px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffc61a;
+  margin: 0 auto; }
+  .download__header p {
+    font-family: "Lato", sans-serif;
+    font-size: 44px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #000000; }
+
+.download__block {
+  position: absolute;
+  left: 10%;
+  top: 200%;
+  max-width: 37%; }
+
+.download__block_text h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 25.5px;
+  line-height: 1.2;
+  font-weight: 900;
+  color: #000000; }
+
+.download__block_text p {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #101010; }
+
+.download__block_buttons button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer; }
+
+.download__image {
+  position: absolute;
+  top: 200%;
+  right: 0; }
 
 /*# sourceMappingURL=maps/main.css.map */
