@@ -4,6 +4,8 @@
 .container {
   max-width: 1600px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .header {
   img {
@@ -503,11 +505,12 @@
 .clients {
   position: relative;
   width: 100%;
+  height:100%;
   display: flex;
-  justify-content: center;
   img {
     position: absolute;
     max-width: 100%;
+    
   }
 }
 .clients__header {
@@ -520,6 +523,7 @@
   text-transform: uppercase;
   color: #ffc61a;
   top: 30px;
+  left: 40%;
   p {
     font-family: "Lato", sans-serif;
     font-size: 44px;
@@ -530,12 +534,22 @@
   }
 }
 .clients__reviews {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .client__reveiws_item {
-  
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 200px;
+  background-color: #000000;
+  border-radius: 20px;
+  top: 80%;
+  left: 40%;
 }
 .client__reviews_item_icon {
   img {
@@ -543,6 +557,7 @@
   }
 }
 .client__reviews_item_text {
+  text-align: center;
   font-family: "Lato", sans-serif;
   h2 {
     font-size: 25px;
@@ -556,5 +571,25 @@
     line-height: 1.2;
     font-weight: 400;
     color: #ffffff;
+  }
+}
+.call24 {
+  height: 190px;
+  background-color: #ffc61a;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  h2 { 
+    font-size: 35px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  p {
+    font-size: 76.7px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #000000;
   }
 }
