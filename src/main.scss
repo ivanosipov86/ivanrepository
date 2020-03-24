@@ -505,12 +505,10 @@
 .clients {
   position: relative;
   width: 100%;
-  height:100%;
+  height: 100%;
   display: flex;
   img {
-    position: absolute;
     max-width: 100%;
-    
   }
 }
 .clients__header {
@@ -534,7 +532,7 @@
   }
 }
 .clients__reviews {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -548,8 +546,6 @@
   height: 200px;
   background-color: #000000;
   border-radius: 20px;
-  top: 80%;
-  left: 40%;
 }
 .client__reviews_item_icon {
   img {
@@ -574,11 +570,16 @@
   }
 }
 .call24 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   height: 190px;
   background-color: #ffc61a;
   font-family: "Lato", sans-serif;
-  text-align: center;
-  h2 { 
+
+  h2 {
     font-size: 35px;
     line-height: 1.2;
     font-weight: 900;
@@ -591,5 +592,16 @@
     font-weight: 900;
     text-transform: uppercase;
     color: #000000;
+  }
+}
+.footer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.534);
+  img {
+    max-width: 100%;
+    mix-blend-mode: darken;
   }
 }
