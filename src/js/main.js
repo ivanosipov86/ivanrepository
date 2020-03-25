@@ -18,15 +18,49 @@ function getValues (){
 
     return result;
 } 
+
 do {
     var numbers = getValues();
     var res = numbers[0];
     
-    for(var i = 1; i <numbers.length; i++) {
+
+    for(var i = 1; i <numbers.length; i = i + 2) {
         res = res + numbers[i];
-}
+
 
 alert('Итого:' + res);
 
 var isProcess = confirm('Продолжить');
-} while (isProcess);
+} while (isProcess); 
+
+
+
+function triangle(lines) {
+    var line = '*';
+
+    for(var i = 0; i < rows[0]; i++) {
+        console.log(line);
+        line += '*';
+    }
+}
+
+var rows = getValues();
+
+triangle(rows[0]);
+
+
+function  triangleReverse(lines, sign) {
+    var strings = [];
+
+    for(var i =0; i < lines; i++) {
+        for(var j = 0; j , lines -i; j++) {
+            strings[i] += sign;
+        }
+        console.log(strings[i]);
+    }
+
+    for ( var i =strings.lenght -1; i >=0; i--){
+        console.log(strings[i]);
+    }
+}
+ triangleReverse(5, '*');
