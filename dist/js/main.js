@@ -7,6 +7,7 @@ do{
     var isProcess = confirm('Продолжить?');
 } while( isProcess);*/
 
+
 function getValues (){
     var result = [];
     var i = 0;
@@ -19,26 +20,28 @@ function getValues (){
     return result;
 } 
 
+function calculator(){
 do {
     var numbers = getValues();
     var res = numbers[0];
     
 
     for(var i = 1; i <numbers.length; i = i + 2) {
-        res = res + numbers[i];
+        res = res + numbers[i];}
 
 
 alert('Итого:' + res);
 
 var isProcess = confirm('Продолжить');
 } while (isProcess); 
+}
 
 
 
 function triangle(lines) {
     var line = '*';
 
-    for(var i = 0; i < rows[0]; i++) {
+    for(var i = 0; i < lines; i++) {
         console.log(line);
         line += '*';
     }
@@ -51,16 +54,48 @@ triangle(rows[0]);
 
 function  triangleReverse(lines, sign) {
     var strings = [];
+    var line;
 
     for(var i =0; i < lines; i++) {
-        for(var j = 0; j , lines -i; j++) {
-            strings[i] += sign;
+        line='';
+        for(var j = 0; j , lines - i; j++) {
+            line += sign;
         }
+        strings[i]= line;
         console.log(strings[i]);
     }
 
-    for ( var i =strings.lenght -1; i >=0; i--){
+    for ( var i = strings.length - 1; i >=0; i--){
         console.log(strings[i]);
     }
 }
- triangleReverse(5, '*');
+// triangleReverse(5, '*');
+
+var values = ['', ''];
+var action;
+var index = 0;
+var inputEl = document.querySelector('.input__block');
+var numberContainer = document.querySelector('.buttons__numbers');
+var actionContainer = document.querySelector('.buttons__simbols');
+
+
+function handleNumberClick(e) {
+    var v = e.target.dataset.value;
+
+   if (v) {
+values[index] += v;
+inputEl.value = values[0] + ' ' + actions + ' ' + values[1];
+   }
+}
+
+function handleActionClick(e) {
+    var v = e.target.dataset.value;
+
+   if (v && !action && v !== '=') {
+action = v;
+index = 1;
+   }
+}
+
+numberContainer.addEventListener('click', handleNumberClick);
+numberContainer.addEventListener('click', handleActionClick);

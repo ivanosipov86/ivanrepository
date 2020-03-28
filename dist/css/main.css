@@ -1,2 +1,39 @@
+.calculator {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border: 3px solid #000000;
+  border-radius: 20px;
+  margin: 100px 100px;
+  background-color: #e9dcdc;
+  padding: 10px; }
+
+.input__block {
+  margin: 20px;
+  display: inline;
+  border: 2px solid #000;
+  height: 30px;
+  font-size: 20px;
+  max-width: 170px;
+  text-align: right; }
+
+.buttons__numbers {
+  position: absolute;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid #000;
+  width: 100px;
+  height: 106px;
+  bottom: -10px; }
+  .buttons__numbers button {
+    width: 30px; }
+
+.buttons__simbols {
+  border: 2px solid #000;
+  position: absolute;
+  right: 37px;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column; }
 
 /*# sourceMappingURL=maps/main.css.map */
