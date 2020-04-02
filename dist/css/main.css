@@ -37,17 +37,22 @@
     color: #ffffff; }
 
 .header__head_nav {
+  float: right;
   font-family: "Lato", sans-serif;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 900;
   text-transform: uppercase;
-  color: #ffffff; }
+  color: #daa505; }
   .header__head_nav ul {
     display: flex; }
     .header__head_nav ul li {
       padding: 10px;
       white-space: nowrap; }
+    .header__head_nav ul li:hover {
+      cursor: pointer;
+      font-size: 20px;
+      color: #ff3604; }
 
 .header__center {
   display: flex;
@@ -77,7 +82,7 @@
   justify-content: center;
   align-items: center;
   background-color: #ffc61a;
-  max-width: 100%; }
+  min-width: 100%; }
 
 .book__container {
   max-width: 1200px;
@@ -453,6 +458,20 @@
     border: none;
     cursor: pointer; }
 
+.download__carousel {
+  position: absolute;
+  border: 2px solid red;
+  width: 180px;
+  height: 360px;
+  right: 270px;
+  margin: 20px 0 0 0;
+  overflow: hidden; }
+
+.owl-carousel_vertical {
+  position: absolute; }
+  .owl-carousel_vertical img {
+    width: 100%; }
+
 .clients {
   position: relative;
   width: 100%;
@@ -480,28 +499,48 @@
     text-transform: uppercase;
     color: #ffffff; }
 
+/*
 .clients__reviews {
   position: absolute;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}*/
+.owl-carousel {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  right: 100%;
+  top: 200px; }
 
-.client__reveiws_item {
+.client__reviews_item {
   color: #fff;
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
   background-color: #000000;
-  border-radius: 20px; }
+  border-radius: 20px;
+  border: 2px solid #fff; }
 
-.client__reviews_item_icon img {
-  border-radius: 50%; }
+.client__reviews_item:hover {
+  width: 400px;
+  height: 250px; }
+
+.client__reviews_item_icon {
+  width: 30%; }
+  .client__reviews_item_icon img {
+    border-radius: 50%; }
 
 .client__reviews_item_text {
+  position: absolute;
   text-align: center;
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  left: 50%;
+  top: 50%; }
   .client__reviews_item_text h2 {
     font-size: 25px;
     line-height: 1.2;
