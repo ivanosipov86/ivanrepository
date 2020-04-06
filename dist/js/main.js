@@ -7,8 +7,8 @@ $(function() {
     loop: true,
     nav: true
   });
+  
 });
-
 $(".next_button").click(function() {
   owl.trigger("next.owl.carousel");
 });
@@ -16,3 +16,4 @@ $(".next_button").click(function() {
 $(".prev_button").click(function() {
   owl.trigger("prev.owl.carousel");
 });
+

@@ -524,9 +524,8 @@
   overflow: hidden;
 }
 
-.owl-carousel_vertical{
+.jsCarousel{
   position: absolute;
-  
   img{
     width: 100%;
     
@@ -634,12 +633,13 @@
   background-color: #ffc61a;
   font-family: "Lato", sans-serif;
 
-  h2 {
+  marquee {
     font-size: 35px;
     line-height: 1.2;
     font-weight: 900;
     text-transform: uppercase;
     color: #000000;
+    
   }
   p {
     font-size: 76.7px;
@@ -647,8 +647,22 @@
     font-weight: 900;
     text-transform: uppercase;
     color: #000000;
+    animation: 1s ease infinite;
+    animation-name: pulse;
   }
 }
+@keyframes pulse{
+  0%{
+    font-size: 45px;
+  }
+  50%{
+    font-size: 15px;
+  }
+  100%{
+    font-size: 35px;
+  }
+}
+
 .footer {
   position: relative;
   width: 100%;

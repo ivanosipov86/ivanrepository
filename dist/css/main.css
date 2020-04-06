@@ -467,9 +467,9 @@
   margin: 20px 0 0 0;
   overflow: hidden; }
 
-.owl-carousel_vertical {
+.jsCarousel {
   position: absolute; }
-  .owl-carousel_vertical img {
+  .jsCarousel img {
     width: 100%; }
 
 .clients {
@@ -562,7 +562,7 @@
   height: 190px;
   background-color: #ffc61a;
   font-family: "Lato", sans-serif; }
-  .call24 h2 {
+  .call24 marquee {
     font-size: 35px;
     line-height: 1.2;
     font-weight: 900;
@@ -573,7 +573,17 @@
     line-height: 1.2;
     font-weight: 900;
     text-transform: uppercase;
-    color: #000000; }
+    color: #000000;
+    animation: 1s ease infinite;
+    animation-name: pulse; }
+
+@keyframes pulse {
+  0% {
+    font-size: 45px; }
+  50% {
+    font-size: 15px; }
+  100% {
+    font-size: 35px; } }
 
 .footer {
   position: relative;
