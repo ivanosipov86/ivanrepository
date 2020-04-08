@@ -1,16 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
 
-
-
 .container {
   min-width: 1200px;
   min-height: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
-  
- 
 }
 .header {
   background-image: url("../img/header__bg.jpg");
@@ -27,7 +23,6 @@
   justify-content: space-between;
   position: absolute;
   top: 1.3%;
-  
 }
 .header__head_logo {
   font-family: "Lato", sans-serif;
@@ -63,27 +58,24 @@
   font-weight: 900;
   text-transform: uppercase;
   color: #daa505;
-  
+
   ul {
     display: flex;
     margin-left: auto;
-  
+
     li {
       padding: 10px;
       white-space: nowrap;
       transition: background-color 0.1s ease 0.1s, border-radius 0.3s ease 0.5s;
-      
     }
-    li:hover{
+    li:hover {
       cursor: pointer;
-      color:#000;
-      background-color:  #daa505;
+      color: #000;
+      background-color: #daa505;
       border-radius: 3%;
     }
   }
-  }
-  
-
+}
 
 .header__center {
   display: flex;
@@ -113,12 +105,11 @@
 .header__center_img_lights {
   display: flex;
   flex-direction: row;
-  justify-content:center;
+  justify-content: center;
   position: absolute;
   top: 290px;
   left: 120px;
   width: 100%;
-  
 }
 .header__center_img_lights_item {
   width: 90px;
@@ -128,19 +119,18 @@
   animation: lights 2s ease infinite;
 }
 
-@keyframes lights{
-  0%{
+@keyframes lights {
+  0% {
     background-color: rgba(59, 175, 221, 0.651);
-    box-shadow: 0 0 20px 20px rgba(59, 175, 221, 0.651) ;
+    box-shadow: 0 0 20px 20px rgba(59, 175, 221, 0.651);
   }
-  50%{
+  50% {
     background-color: rgba(59, 175, 221, 0.582);
-    box-shadow: 0 0 15px 15px rgba(59, 175, 221, 0.582) ;
+    box-shadow: 0 0 15px 15px rgba(59, 175, 221, 0.582);
   }
-  100%{
+  100% {
     background-color: rgba(59, 175, 221, 0.247);
-    box-shadow: 0 0 8px 8px  rgba(59, 175, 221, 0.247) ;
-    
+    box-shadow: 0 0 8px 8px rgba(59, 175, 221, 0.247);
   }
 }
 
@@ -561,25 +551,21 @@
     cursor: pointer;
   }
 }
+.download__block_buttons button:hover{
+  
+}
 
-.download__carousel{
+.download__carousel {
   position: absolute;
   border: 2px solid red;
   width: 180px;
   height: 360px;
   right: 270px;
-  margin: 20px 0 0 0 ;
+  margin: 20px 0 0 0;
   overflow: hidden;
 }
 
-.jsCarousel{
-  position: absolute;
-  img{
-    width: 100%;
-    
-  }
-  
-}
+
 .download__image {
 }
 .clients {
@@ -587,7 +573,7 @@
   width: 100%;
   height: 100%;
   display: flex;
-  
+
   img {
     max-width: 100%;
   }
@@ -620,7 +606,7 @@
   align-items: center;
 }*/
 
-.client__reviews{
+.client__reviews {
   position: absolute;
   top: 45%;
   display: flex;
@@ -680,7 +666,6 @@
     font-weight: 900;
     text-transform: uppercase;
     color: #000000;
-    
   }
   p {
     font-size: 76.7px;
@@ -692,14 +677,14 @@
     animation-name: puls;
   }
 }
-@keyframes pulse{
-  0%{
+@keyframes pulse {
+  0% {
     font-size: 45px;
   }
-  50%{
+  50% {
     font-size: 15px;
   }
-  100%{
+  100% {
     font-size: 35px;
   }
 }
@@ -782,45 +767,58 @@
   color: #ffffff;
 }
 
-
 /* Слайдер */
-.slick-slider{}
+.slick-slider {
+}
 /* Слайдер запущен */
-.slick-slider.slick-initialized{}
+.slick-slider.slick-initialized {
+}
 /* Слайдер с точками */
-.slick-slider.slick-dotted{}
+.slick-slider.slick-dotted {
+}
 /* Ограничивающая оболочка */
 .slick-list {
-  
 }
 /* Лента слайдов */
-.slick-track{
+.slick-track {
   position: absolute;
   display: flex;
-  
 }
 /* Слайд */
-.slick-slide{}
+.slick-slide {
+}
 /* Слайд активный (показывается) */
-.slick-slide.slick-active{}
+.slick-slide.slick-active {
+}
 /* Слайд основной */
-.slick-slide.slick-current{}
+.slick-slide.slick-current {
+}
 /* Слайд по центру */
-.slick-slide.slick-center{}
+.slick-slide.slick-center {
+}
 /* Клонированный слайд */
-.slick-slide.slick-cloned{}
+.slick-slide.slick-cloned {
+}
 /* Стрелка */
-.slick-arrow{}
+.slick-arrow {
+}
 /* Стрелка влево */
-.slick-arrow.slick-prev{}
+.slick-arrow.slick-prev {
+}
 /* Стрелка вправо */
-.slick-arrow.slick-next{}
+.slick-arrow.slick-next {
+}
 /* Стрелка не активная */
-.slick-arrow.slick-disabled{}
+.slick-arrow.slick-disabled {
+}
 /* Точки (булиты) */
-.slick-dots{}
-.slick-dots li{}
+.slick-dots {
+}
+.slick-dots li {
+}
 /* Активная точка */
-.slick-dots li.slick-active{}
+.slick-dots li.slick-active {
+}
 /* Элемент точки */
-.slick-dots li button{}
+.slick-dots li button {
+}

@@ -506,11 +506,6 @@
   margin: 20px 0 0 0;
   overflow: hidden; }
 
-.jsCarousel {
-  position: absolute; }
-  .jsCarousel img {
-    width: 100%; }
-
 .clients {
   position: relative;
   width: 100%;
