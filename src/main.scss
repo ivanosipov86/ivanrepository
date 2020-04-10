@@ -62,13 +62,17 @@
   ul {
     display: flex;
     margin-left: auto;
+    a {
+      text-decoration: none;
+      color: #daa505;
+    }
 
-    li {
+    a {
       padding: 10px;
       white-space: nowrap;
       transition: background-color 0.1s ease 0.1s, border-radius 0.3s ease 0.5s;
     }
-    li:hover {
+    a:hover {
       cursor: pointer;
       color: #000;
       background-color: #daa505;
@@ -193,6 +197,9 @@
     padding: 10px 30px;
     border-radius: 10px;
   }
+  a:hover {
+    color: #ffc61a;
+  }
 }
 .book__input {
   width: 430px;
@@ -300,6 +307,10 @@
     min-width: 90%;
     outline: none;
     cursor: pointer;
+  }
+  input:hover {
+    background-color: #ffc61a;
+    color: #000000;
   }
 }
 .tariffs {
@@ -551,8 +562,7 @@
     cursor: pointer;
   }
 }
-.download__block_buttons button:hover{
-  
+.download__block_buttons button:hover {
 }
 
 .download__carousel {
@@ -564,7 +574,6 @@
   margin: 20px 0 0 0;
   overflow: hidden;
 }
-
 
 .download__image {
 }
@@ -694,6 +703,7 @@
   width: 100%;
   height: 100%;
   display: flex;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.842);
   img {
     max-width: 100%;
