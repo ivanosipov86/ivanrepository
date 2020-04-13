@@ -505,14 +505,18 @@
     border: none;
     cursor: pointer; }
 
-.download__carousel {
+.download__slider {
   position: absolute;
-  border: 2px solid red;
   width: 180px;
-  height: 360px;
+  height: 380px;
   right: 270px;
   margin: 20px 0 0 0;
-  overflow: hidden; }
+  overflow: hidden;
+  border: 1px solid red; }
+
+.download__slider_item img {
+  max-width: 150px;
+  margin: 20px; }
 
 .clients {
   position: relative;
@@ -691,10 +695,16 @@
 /* Слайдер запущен */
 /* Слайдер с точками */
 /* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden; }
+
 /* Лента слайдов */
 .slick-track {
-  position: absolute;
-  display: flex; }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 0; }
 
 /* Слайд */
 /* Слайд активный (показывается) */
