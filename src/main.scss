@@ -8,6 +8,57 @@
   display: flex;
   flex-direction: column;
 }
+.home__button{
+    position: fixed;
+    bottom: 5%;
+    right: 0;
+    z-index: 10;
+    background-color: #daa505;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border: 3px solid #000;
+    border-right: none;
+    height: 80px;
+    width: 40px;
+    text-transform: uppercase;
+    font-size: 250%;
+    text-align: center;
+    word-wrap: break-word;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    a{
+        text-decoration: none;
+        color:#000 ;
+    }
+    
+    }
+    .home__button:hover{
+        cursor: pointer;
+        background-image: url("../img/icons/up-arrow.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:30px ;
+        animation: upArrow 2s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite;
+    }
+    .home__button:hover>a{
+        opacity: 0;
+    }
+
+    @keyframes upArrow{
+        0%{
+            background-position: bottom;
+            background-repeat: repeat-y;
+        }
+        50%{
+            background-position: center;
+            background-repeat: repeat-y;
+        }
+        100%{
+            background-position: top;
+            background-repeat: repeat-y;
+        }
+    }
+
 .header {
   background-image: url("../img/header__bg.jpg");
   min-width: 100%;
@@ -110,32 +161,30 @@
 
 .header__center_img {
   padding-top: 50px;
-  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
 .header__center_img_lights {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content:flex-end ;
   position: absolute;
-  top: 350px;
-  left: 140px;
+  top: 60%;
   width: 100%;
+  
 }
 .header__center_img_lights_item_1 {
-  position: absolute;
-  left: 23%;
-  width: 90px;
+  width: 15%;
   height: 70px;
   border-radius: 50%;
   animation: lights 2s ease infinite;
 }
 .header__center_img_lights_item_2 {
-  position: absolute;
-  right: 20%;
-  width: 90px;
+  width: 15%;
   height: 70px;
   border-radius: 50%;
+  margin-left: 30%;
   animation: lights 2s ease infinite;
 }
 
@@ -523,6 +572,7 @@
 }
 .download {
   max-height: 100%;
+  position: relative;
 }
 .download__header {
   text-align: center;
@@ -543,11 +593,12 @@
   }
 }
 .download__container {
+  min-width: 1200px;
+  position: relative;  
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  margin-top: 5%;
-  margin-left: 4%;
-  margin-bottom: 0%;
+ 
 }
 .download__block {
   max-width: 37%;
@@ -580,37 +631,41 @@
 }
 .download__block_buttons button:hover {
 }
+.download__slider_container{
+    position: relative;
+    right: 0;
+    top: 10px;
+    img{
+        position: relative;
+        bottom: -1%;
+    }
+}
+
 
 .download__slider {
   position: absolute;
+  top: 2%;
+  left: 6%;
   width: 180px;
   height: 380px;
-  right: 20%;
   margin: 20px 0 0 0;
   overflow: hidden;
-  border: 1px solid red;
-
-  
-  
- 
   
 }
 .download__slider_item{
  img{
      max-width:150px ;
      margin: 20px;
-     
  }
 }
 
-.download__slider_background {
 
-}
 .clients {
   position: relative;
   width: 100%;
   height: 100%;
   display: flex;
+  overflow: hidden;
 
   img {
     max-width: 100%;
