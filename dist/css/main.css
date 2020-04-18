@@ -1,55 +1,43 @@
 .header {
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   border: 1px solid lightgrey;
   padding: 10px;
   display: flex;
   align-items: center;
-  height: 60px;
+  height: 60px; }
 
-}
 .burger-opener {
   display: none;
-  border: 1px solid black;
-}
-
-
+  border: 1px solid black; }
 
 .main-menu {
   display: flex;
-  justify-content: space-around;
-
-  &__item {
+  justify-content: space-around; }
+  .main-menu__item {
     padding: 5px;
-    border: 1px solid red;
-  }
-}
+    border: 1px solid red; }
 
 .main-menu.is-active {
   max-height: 100vh;
-  border: 1px solid lightgrey;
-}
+  border: 1px solid lightgrey; }
+
 @media screen and (min-width: 768px) {
   .burger-opener {
     display: block;
     cursor: pointer;
-    padding: 5px;
-  }
-}
+    padding: 5px; } }
 
 .main-nenu {
   position: absolute;
   left: 50px;
   top: 100%;
   flex-direction: column;
-  border: 1px solid lightgrey;
-  
-}
+  border: 1px solid lightgrey; }
 
 .main-menu.is-active .main-menu__item {
-  margin: 7px;
-  
-}
+  margin: 7px; }
 
+/*# sourceMappingURL=maps/main.css.map */
