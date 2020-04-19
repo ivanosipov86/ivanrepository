@@ -10,3 +10,12 @@ $(document).ready(function(){
   infinite: true,
  });
 });
+
+var opener = document.querySelector('.menu__button');
+var menu = document.querySelector('header__head_nav');
+
+function clickHandler(event) {
+   console.log('Opener was clicked');
+}
+
+opener.addEventlistener('click', clickHandler);
