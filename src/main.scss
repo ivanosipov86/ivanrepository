@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
 }
-.menu__button{
+.menu__button {
   display: none;
   justify-content: center;
   align-items: center;
@@ -22,9 +22,6 @@
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 20px;
-  
-  
-  
 }
 .home__button {
   position: fixed;
@@ -169,7 +166,6 @@
   font-weight: 900;
   text-transform: uppercase;
   color: #ffffff;
-  
 }
 .header__center_number:hover {
   cursor: pointer;
@@ -885,41 +881,35 @@
   min-width: 0;
 }
 @media screen and (max-width: 770px) {
-  .container{
+  .container {
     min-width: 766px;
   }
 
-  .menu__button{
+  .menu__button {
     display: flex;
   }
-  .menu__button:hover{
+  .menu__button:hover {
     cursor: pointer;
   }
-  .menu__button:hover  .header__head_nav{
-    display: flex;
-    
-  }
 
-  .header{
+  .header {
     background-color: #000;
     background-image: none;
-    img{
+    img {
       opacity: 0.5;
     }
   }
-  .header__head{
+  .header__head {
   }
-  .header__head_logo{
+  .header__head_logo {
     position: static;
     margin: 80px auto;
-    .cab{
+    .cab {
       font-size: 60px;
     }
-    .call{
+    .call {
       font-size: 21.5px;
     }
-    
-    
   }
   .header__head_nav {
     width: 100%;
@@ -929,29 +919,30 @@
     left: 0;
     display: none;
     z-index: 15;
-    nav{
+    nav {
       width: 100%;
     }
     ul {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      color:#000;
+      color: #000;
       background-color: #daa505;
-      
     }
-    li{
-      padding:10px;
-      a{
-        color:#000;
+    li {
+      padding: 10px;
+      a {
+        color: #000;
       }
     }
   }
-  .header__center{
+
+  .header__head_nav.is-active {
+    display: flex;
+  }
+  .header__center {
     position: absolute;
-   top: 8.5%;
-   
-    
+    top: 8.5%;
   }
   .header__center_img {
     display: none;
@@ -997,26 +988,14 @@
   .book__input_submit {
     margin-bottom: 30px;
   }
-  
-  
 
-
-
-
-
-
-  .download{
+  .download {
     min-width: 100%;
   }
-  .download__container{
+  .download__container {
     min-width: 100%;
   }
-  .download__slider_container{
+  .download__slider_container {
     display: none;
   }
 }
-
-
-
-
-

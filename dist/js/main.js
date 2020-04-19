@@ -12,10 +12,12 @@ $(document).ready(function(){
 });
 
 var opener = document.querySelector('.menu__button');
-var menu = document.querySelector('header__head_nav');
+var menu = document.querySelector('.header__head_nav');
 
 function clickHandler(event) {
    console.log('Opener was clicked');
+   menu.classList.toggle('is-active');
+   
 }
 
-opener.addEventlistener('click', clickHandler);
+opener.addEventListener('click', clickHandler);

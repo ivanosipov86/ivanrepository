@@ -788,8 +788,6 @@
     display: flex; }
   .menu__button:hover {
     cursor: pointer; }
-  .menu__button:hover .header__head_nav {
-    display: flex; }
   .header {
     background-color: #000;
     background-image: none; }
@@ -822,6 +820,8 @@
       padding: 10px; }
       .header__head_nav li a {
         color: #000; }
+  .header__head_nav.is-active {
+    display: flex; }
   .header__center {
     position: absolute;
     top: 8.5%; }
