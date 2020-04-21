@@ -3,7 +3,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  border: 1px solid lightgrey;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -21,14 +20,13 @@
     border: 1px solid red; }
 
 .main-menu.is-active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
   max-height: 100vh;
-  border: 1px solid lightgrey; }
-
-@media screen and (min-width: 768px) {
-  .burger-opener {
-    display: block;
-    cursor: pointer;
-    padding: 5px; } }
+  border: 1px solid lightgrey;
+  animation: opacity 0.5s ease; }
 
 .main-nenu {
   position: absolute;
@@ -39,5 +37,20 @@
 
 .main-menu.is-active .main-menu__item {
   margin: 7px; }
+
+@media screen and (max-width: 768px) {
+  .burger-opener {
+    display: block;
+    cursor: pointer;
+    padding: 5px; }
+  .main-menu {
+    display: none; }
+  @keyframes opacity {
+    0% {
+      opacity: 0; }
+    50% {
+      opacity: 0.5; }
+    100% {
+      opacity: 1; } } }
 
 /*# sourceMappingURL=maps/main.css.map */
