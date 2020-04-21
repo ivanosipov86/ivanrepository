@@ -77,7 +77,7 @@
   background-color: #000;
   width: 100%;
   img {
-  width: 100%;
+    width: 100%;
   }
 }
 .header__head {
@@ -226,7 +226,6 @@
   display: flex;
   padding-top: 15%;
   margin-bottom: 50px;
-  
 }
 .book__description {
   max-width: 560px;
@@ -496,7 +495,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  
+
   img {
     width: 100%;
   }
@@ -533,7 +532,6 @@
   left: 0;
   right: 0;
   margin: auto;
-  
 }
 .wish__item {
   display: flex;
@@ -548,8 +546,8 @@
   border-radius: 50%;
   img {
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
@@ -559,7 +557,7 @@
 .wish__item_text {
   padding-left: 5%;
   font-family: "Lato", sans-serif;
-  
+
   h2 {
     font-size: 25px;
     line-height: 1.2;
@@ -575,24 +573,23 @@
   }
 }
 
-  
-  .wish__button {
-    position: absolute;
-    bottom: 40px;
-    a {
-      font-family: "Bebas Neue", cursive;
-      font-size: 29.6px;
-      line-height: 1.2;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: #ffffff;
-      background-color: #ffc61a;
-      text-decoration: none;
-      padding: 10px 30px;
-      border-radius: 10px;
-      color: #000;
-    }
+.wish__button {
+  position: absolute;
+  bottom: 40px;
+  a {
+    font-family: "Bebas Neue", cursive;
+    font-size: 29.6px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #ffc61a;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: #000;
   }
+}
 
 .download {
   width: 100%;
@@ -647,7 +644,6 @@
   }
 }
 .download__block_buttons {
-  
   margin: 50px 0 0 0;
   button {
     position: relative;
@@ -657,7 +653,7 @@
     cursor: pointer;
     overflow: hidden;
   }
-  a{
+  a {
     position: absolute;
     left: 15%;
     bottom: 40%;
@@ -736,7 +732,6 @@
   top: 45%;
   display: flex;
   overflow: hidden;
-  
 }
 
 .client__reviews_item {
@@ -787,12 +782,12 @@
   height: 190px;
   background-color: #ffc61a;
   font-family: "Lato", sans-serif;
-    font-size: 35px;
-    line-height: 1.2;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: #000000;
-  
+  font-size: 35px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000000;
+
   p {
     font-size: 76.7px;
     line-height: 1.2;
@@ -805,13 +800,13 @@
 }
 @keyframes pulse {
   0% {
-    letter-spacing: 10px ;
+    letter-spacing: 10px;
   }
   50% {
-    letter-spacing: 20px ;
+    letter-spacing: 20px;
   }
   100% {
-    letter-spacing: 10px ;
+    letter-spacing: 10px;
   }
 }
 
@@ -831,7 +826,6 @@
   justify-content: space-around;
   position: absolute;
   width: 80%;
- 
 }
 .footer__column {
   display: flex;
@@ -905,12 +899,11 @@
   min-width: 0;
 }
 
-
-@media screen and (max-width: 1100px ){
-  .header__center{
-    top:4%;
+@media screen and (max-width: 1100px) {
+  .header__center {
+    top: 4%;
   }
-  .wish{
+  .wish {
     height: 700px;
   }
 }
@@ -921,28 +914,23 @@
 
   .menu__button {
     display: flex;
-    
-    
   }
   .menu__button:hover {
     cursor: pointer;
   }
-  .home__button{
-   position: fixed;
-   bottom:5px;
-   width: 10%;
-   height: 30px;
-   right:0;
-   left:0;
-   margin: auto;
-   border-right: 3px solid #000;
-   border-top-right-radius: 10px;
-   border-bottom-left-radius: 0;
-   border-bottom: none;
-   font-size: 200%;
-   
-   
-
+  .home__button {
+    position: fixed;
+    bottom: 5px;
+    width: 10%;
+    height: 30px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-right: 3px solid #000;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom: none;
+    font-size: 200%;
   }
 
   .header {
@@ -989,11 +977,9 @@
       }
     }
   }
- 
 
   .header__head_nav.is-active {
     display: flex;
-    
   }
   .header__center {
     position: absolute;
@@ -1047,24 +1033,21 @@
   .wish {
     height: 100%;
   }
-  .wish__items{
+  .wish__items {
     width: 770px;
     flex-direction: row;
     justify-content: center;
     flex-wrap: nowrap;
-    
-    
   }
   .wish__item {
     position: relative;
     flex-direction: row;
     padding: 0px 10px 0px 10px;
   }
-  .wish__item_text{
+  .wish__item_text {
     display: none;
-    
   }
-  .wish__button{
+  .wish__button {
     bottom: 25px;
   }
   .download {
@@ -1073,12 +1056,12 @@
   .download__container {
     min-width: 100%;
   }
-  .download__block_buttons{
+  .download__block_buttons {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 25px;
-    button{
+    button {
       margin-bottom: 10px;
     }
   }
@@ -1086,22 +1069,19 @@
     display: none;
   }
 
-  .call24{
+  .call24 {
     font-size: 25px;
   }
 
   @keyframes pulse {
-    0%{
-      letter-spacing: 5px ;
+    0% {
+      letter-spacing: 5px;
     }
-    50%{
-      letter-spacing: 10px ;
+    50% {
+      letter-spacing: 10px;
     }
-    100%{
-      letter-spacing: 5px ;
+    100% {
+      letter-spacing: 5px;
     }
   }
-
 }
-
-
