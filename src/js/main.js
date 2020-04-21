@@ -1,20 +1,21 @@
-var opener = document.querySelector('.burger-opener');
-var menu = document.querySelector('.main-menu');
-
-function clickHandler(event) {
-   console.log('Opener was clicked');
-   menu.classList.toggle('is-active');
-}
-
-opener.addEventListener('click', clickHandler);
+var ad = document.createElement('div');
+var img = document.createElement('img');
+var btn = document.createElement('button');
+var txt = document.createElement('p');
 
 
-var ul = document.createElement('ul');
-var li1 = document.createElement('li');
-var li2 = document.createElement('li');
+var body = document.querySelector('body');
+var placeholder = document.querySelector('#ad');
 
-ul.append(li1, li2);
+txt.innerText = 'Мечтаете освоить новую профессию или прокачать навыки? Приходите в IT-Academy. Мы не продаем курсы. Мы продаем профессию! 20 различных программ.';
+btn.innerText = 'click me!';
+img.src = 'https://vignette1.wikia.nocookie.net/callofduty/images/d/d0/Elmo_150px.png/revision/latest?cb=20120118200227'
 
-var parent = document.querySelector('body');
+ad.classList.add('banner');
 
-parent.appendCild(node);
+ad.appendChild(img);
+ad.appendChild(txt);
+ad.appendChild(btn);
+
+body.replaceChild(ad, placeholder);
+
