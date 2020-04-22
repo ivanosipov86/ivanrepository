@@ -11,6 +11,21 @@ $(document).ready(function(){
  });
 });
 
+$(document).ready(function(){
+   $(".owl-carousel").owlCarousel({
+    center: true,
+    items:4,
+    loop:true,
+    margin:10,
+    touchDrag:true,
+    autoplay:true,
+    autoplayHoverPause:true,
+    autoplaySpeed:1000,
+    nav:true,
+    
+   });
+ });
+
 
 
 var opener = document.querySelector('.menu__button');
