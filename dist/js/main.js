@@ -22,7 +22,17 @@ $(document).ready(function(){
     autoplayHoverPause:true,
     autoplaySpeed:1000,
     nav:true,
-    
+    responsive: {
+      0: {
+          items: 1
+      },
+      600: {
+          items: 2
+      },
+      900: {
+        items: 4
+  },
+  }
    });
  });
 
