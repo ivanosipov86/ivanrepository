@@ -476,7 +476,7 @@
   max-width: 80%;
   display: flex;
   flex-wrap: wrap;
-  align-content: space-around;
+  align-content: space-between;
   top: 40%;
   left: 0;
   right: 0;
@@ -500,7 +500,13 @@
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 50%; }
+    width: 50%;
+    transition: transform 1s; }
+
+.wish__item_icon img:hover {
+  cursor: pointer;
+  width: 60%;
+  transform: rotate(360deg); }
 
 .wish__item_text {
   padding-left: 5%;
@@ -532,6 +538,9 @@
     padding: 10px 30px;
     border-radius: 10px;
     color: #000; }
+
+.wish__button a:hover {
+  background-color: #fff; }
 
 .download {
   width: 100%;

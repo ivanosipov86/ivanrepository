@@ -21,7 +21,6 @@
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 20px;
-
 }
 .home__button {
   position: fixed;
@@ -533,7 +532,7 @@
   max-width: 80%;
   display: flex;
   flex-wrap: wrap;
-  align-content: space-around;
+  align-content: space-between;
   top: 40%;
   left: 0;
   right: 0;
@@ -558,7 +557,13 @@
     bottom: 0;
     margin: auto;
     width: 50%;
+    transition: transform 1s;
   }
+}
+.wish__item_icon img:hover {
+  cursor: pointer;
+  width: 60%;
+  transform: rotate(360deg);
 }
 .wish__item_text {
   padding-left: 5%;
@@ -595,6 +600,9 @@
     border-radius: 10px;
     color: #000;
   }
+}
+.wish__button a:hover {
+  background-color: #fff;
 }
 
 .download {
@@ -769,9 +777,8 @@
   text-overflow: ellipsis;
 }
 .client__reviews_item_icon {
- width: 30%;
+  width: 30%;
   img {
-    
     margin: 5px;
     border: 2px solid #daa505;
     border-radius: 50%;
@@ -996,7 +1003,7 @@
       opacity: 0.5;
     }
   }
- 
+
   .header__head_logo {
     position: static;
     margin: 80px auto;
@@ -1024,7 +1031,6 @@
       justify-content: center;
       color: #000;
       background-color: #daa505;
-      
     }
     li {
       padding: 10px;
@@ -1036,7 +1042,6 @@
       border-bottom: 1px solid rgba(0, 0, 0, 0.459);
       background-color: #daa505;
     }
-    
   }
 
   .header__head_nav.is-active {
@@ -1134,7 +1139,7 @@
   .download__slider_container {
     display: none;
   }
-  
+
   .call24 {
     font-size: 25px;
   }
