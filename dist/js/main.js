@@ -20,7 +20,6 @@ $(document).ready(function () {
     autoplay: true,
     autoplayHoverPause: true,
     autoplaySpeed: 1000,
-    nav: true,
     responsive: {
       0: {
         items: 1,
